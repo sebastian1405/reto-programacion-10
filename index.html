@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto 10 Formularios</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="preferences">
+        <div class="separator">
+          <label class="mb1" for="name">Nombre:</label>
+          <input type="text" id="name" name="name" class="mb1" />
+          <div class="separator">
+            <label class="mb1" for="favorite"
+              >De lo aprendido hasta ahora que te gusto mas?</label
+            >
+          </div>
+          <select id="favorite" name="favorite" class="mb1">
+            <option>Seleccione una opcion...</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Flexbox">FlexBox</option>
+            <option value="css">CSS</option>
+          </select>
+        </div>
+        <div class="separator radio">
+          <p>¿Preferis estudiar?</p>
+          <input type="radio" name="preference" id="day" value="day" /><span
+            >Dia</span
+          >
+          <input type="radio" name="preference" id="nigth" value="night" /><span
+            >Noche</span
+          >
+        </div>
+        <div class="separator check">
+          <div class="row">
+            <p>¿Cuales fueron los temas mas complejos hasta ahora?</p>
+            <input
+              type="checkbox"
+              name="complex"
+              id="typescript"
+              value="typescript"
+            />
+            <label for="typescript"> Typescript</label>
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="complex"
+              id="promesas"
+              value="promesas"
+            />
+            <label for="promesas"> Promesas</label>
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="complex"
+              id="funciones"
+              value="funciones"
+            />
+            <label for="funciones"> Funciones</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="complex" id="clases" value="clases" />
+            <label for="clases"> Clases</label>
+          </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
